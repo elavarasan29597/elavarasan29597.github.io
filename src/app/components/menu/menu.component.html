@@ -1,6 +1,7 @@
 <a class="js-addo-nav-toggle addo-nav-toggle" *ngIf="!display" (click)="display = true"><i class="pi pi-menu"></i></a>
 
-<p-sidebar [(visible)]="display" [showCloseIcon]="false" [closeOnEscape]="true" styleClass="p-p-0 ui-sidebar-close">
+<p-sidebar [(visible)]="display" [showCloseIcon]="false" [fullScreen]="true" [baseZIndex]="10000" [closeOnEscape]="true"
+    styleClass="p-p-0 ui-sidebar-close">
     <div class="layout-sidebar-toggle">
         <div id="sidebar-logo"> <a routerLink="/"><b>Profile</b><span>Elavarasan</span></a> </div>
         <nav id="sidebar-main-menu">
