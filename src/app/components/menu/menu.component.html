@@ -1,0 +1,49 @@
+<a class="js-addo-nav-toggle addo-nav-toggle" *ngIf="!display" (click)="display = true"><i class="pi pi-menu"></i></a>
+
+<p-sidebar [(visible)]="display" [showCloseIcon]="false" [closeOnEscape]="true" styleClass="p-p-0 ui-sidebar-close">
+    <div class="layout-sidebar-toggle">
+        <div id="sidebar-logo"> <a routerLink="/"><b>Profile</b><span>Elavarasan</span></a> </div>
+        <nav id="sidebar-main-menu">
+            <ul>
+                <li routerLink="/" (click)="display = false"><a>Home</a></li>
+                <li routerLink="/about" (click)="display = false"><a>About</a></li>
+                <li routerLink="/services" (click)="display = false"><a>Services</a></li>
+                <li routerLink="/hobbies" (click)="display = false"><a>Hobbies</a></li>
+                <li routerLink="/blogs" (click)="display = false"><a>Blog</a></li>
+                <li routerLink="/contact" (click)="display = false"><a>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer i-table-hide-on-sm">
+            <ul>
+                <li class="p-mr-2"><a routerLink="/"><i class="pi pi-facebook"></i></a></li>
+                <li class="p-mr-2"><a routerLink="/"><i class="pi pi-twitter"></i></a></li>
+                <li class="p-mr-2"><a routerLink="/"><i class="pi pi-youtube"></i></a></li>
+                <li class="p-mr-2"><a routerLink="/"><i class="pi pi-github"></i></a></li>
+            </ul>
+            <p><small>© 2021 Developed by <a routerLink="/">Elavarasan</a></small></p>
+        </div>
+    </div>
+</p-sidebar>
+
+<div class="layout-sidebar">
+    <div id="sidebar-logo"> <a routerLink="/"><b>Profile</b><span>Elavarasan</span></a> </div>
+    <nav id="sidebar-main-menu">
+        <ul>
+            <li routerLink="/"><a>Home</a></li>
+            <li routerLink="/about"><a>About</a></li>
+            <li routerLink="/services"><a>Services</a></li>
+            <li routerLink="/hobbies"><a>Hobbies</a></li>
+            <li routerLink="/blogs"><a>Blog</a></li>
+            <li routerLink="/contact"><a>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar-footer i-table-hide-on-sm">
+        <ul>
+            <li class="p-mr-2"><a routerLink="/"><i class="pi pi-facebook"></i></a></li>
+            <li class="p-mr-2"><a routerLink="/"><i class="pi pi-twitter"></i></a></li>
+            <li class="p-mr-2"><a routerLink="/"><i class="pi pi-youtube"></i></a></li>
+            <li class="p-mr-2"><a routerLink="/"><i class="pi pi-github"></i></a></li>
+        </ul>
+        <p><small>© 2021 Developed by <a routerLink="/">Elavarasan</a></small></p>
+    </div>
+</div>

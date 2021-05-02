@@ -1,0 +1,51 @@
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+#sticky_item {
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.project-desc h2 {
+    color: #101010;
+    font-family: 'Rambla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.75em;
+    margin: 0 0 10px 0;
+}
+
+p {
+    font-family: 'Rambla', sans-serif;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #888;
+    margin: 0 0 20px;
+}
+
+b, strong {
+    color: #101010;
+    font-weight: bold;
+}

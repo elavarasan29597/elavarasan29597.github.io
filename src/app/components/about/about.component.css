@@ -1,0 +1,113 @@
+
+
+.animate-box {
+    opacity: 0;
+}
+
+
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #101010;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 1.75em;
+    margin: 0 0 10px 0;
+}
+
+img {
+    width: 100%;
+    min-height: 415px;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.objective, .dob {
+    font-family: 'Rambla', sans-serif;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #888 !important;
+    margin: 0 0 5px;
+}
+
+b, strong {
+    color: #101010;
+    font-weight: bold;
+}
+
+#shodow {
+    background: #f7f7f7;
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+}
+
+.bar-title {
+    position: relative;
+    font-family: 'Rambla', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin: 0 0 5px 0;
+    color: #101010;
+}
+
+.percent {
+    position: absolute;
+    right: 0;
+}
+
+.bar {
+    position: relative;
+    background-color: #ececec;
+    height: 3px;
+    margin: 0 0 15px 0;
+}
+
+.bar-fill-developer {
+    width: 90%;
+    background-color: #101010;
+    animation: bar-fill-developer 2s ease-out;
+    -moz-animation: bar-fill-developer 2s ease-out;
+    -webkit-animation: bar-fill-developer 2s ease-out;
+}
+
+.bar-fill {
+    position: absolute;
+    height: 3px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+    .full-width {
+        width: 101.5%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+    .full-width {
+        width: 102%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 200px) {
+    .full-width {
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+.footer {
+    background: #f7f7f7;
+    height: auto;
+    margin-top: 50px;
+}
+
+.footer div {
+    padding: 30px;
+    margin-top: 20px;
+}
+.addo-lead {
+    font-size: 14px;
+    line-height: 2em;
+    color: #101010;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #101010;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+.social-network li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    font-size: 15px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: #101010;
+    transition: 0.5s;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:hover, a:active, a:focus {
+    color: #101010;
+    outline: none;
+    text-decoration: none !important;
+}
+
+h2 span {
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #101010;
+    font-weight: 400;
+    letter-spacing: 3px;
+}

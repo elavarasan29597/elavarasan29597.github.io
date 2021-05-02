@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link:not(.p-disabled):focus {
+    box-shadow: 0 0 0 0 #ffff !important;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.heading-meta {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.addo-heading {
+    color: #101010;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
