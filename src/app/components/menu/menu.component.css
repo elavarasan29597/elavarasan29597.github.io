@@ -23,7 +23,7 @@
     left: 0;
     overflow-y: scroll;
     min-height: 100%;
-    height: 800px;
+    height: 700px;
     z-index: 1001;
     background: #101010;
     -webkit-transition: 0.5s;

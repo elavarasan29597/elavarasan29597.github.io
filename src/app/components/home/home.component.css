@@ -24,7 +24,7 @@
     background-image: url("../../../assets/background-image/3426526.jpg");
     background-color: #cccccc;
     /* Used if the image is unavailable */
-    min-height: 625px;
+    min-height: 700px;
     /* You must set a specified height */
     background-repeat: no-repeat;
     /* Do not repeat the image */
