@@ -36,10 +36,10 @@ export const slideInAnimation =
       query(':leave', animateChild(), { optional: true }),
       group([
         query(':leave', [
-          animate('1500ms ease-out', style({ left: '100%' }))
+          animate('1000ms ease-out', style({ left: '100%' }))
         ], { optional: true }),
         query(':enter', [
-          animate('1500ms ease-out', style({ left: '0%' }))
+          animate('1000ms ease-out', style({ left: '0%' }))
         ], { optional: true })
       ]),
       query(':enter', animateChild(), { optional: true }),

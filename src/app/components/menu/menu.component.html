@@ -3,7 +3,7 @@
 <p-sidebar [(visible)]="display" [showCloseIcon]="false" [fullScreen]="true" [baseZIndex]="10000" [closeOnEscape]="true"
     styleClass="p-p-0 ui-sidebar-close">
     <div class="layout-sidebar-toggle">
-        <div id="sidebar-logo"> <a routerLink="/"><b>Profile</b><span>Elavarasan</span></a> </div>
+        <!-- <div id="sidebar-logo"> <a routerLink="/"><b>Profile</b><span>Elavarasan</span></a> </div> -->
         <nav id="sidebar-main-menu">
             <ul>
                 <li routerLink="/" (click)="display = false"><a>Home</a></li>
@@ -27,7 +27,8 @@
 </p-sidebar>
 
 <div class="layout-sidebar">
-    <div id="sidebar-logo"> <a routerLink="/"><b>Profile</b><span>Elavarasan</span></a> </div>
+    <!-- <div id="sidebar-logo"> <a routerLink="/"><b>Profile</b><span>Elavarasan</span></a> </div> -->
+    <!-- <div style="height: 10px;"></div> -->
     <nav id="sidebar-main-menu">
         <ul>
             <li routerLink="/"><a>Home</a></li>
@@ -38,7 +39,7 @@
             <li routerLink="/contact"><a>Contact</a></li>
         </ul>
     </nav>
-    <div class="sidebar-footer i-table-hide-on-sm">
+    <div class="sidebar-footer">
         <ul>
             <li class="p-mr-2"><a routerLink="/"><i class="pi pi-facebook"></i></a></li>
             <li class="p-mr-2"><a routerLink="/"><i class="pi pi-twitter"></i></a></li>

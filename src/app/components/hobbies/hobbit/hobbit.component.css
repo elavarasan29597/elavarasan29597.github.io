@@ -49,3 +49,8 @@ b, strong {
     color: #101010;
     font-weight: bold;
 }
+
+#sticky_item {
+    position: sticky;
+    top: 50px !important;
+}

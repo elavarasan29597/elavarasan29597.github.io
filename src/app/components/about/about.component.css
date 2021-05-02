@@ -1,10 +1,6 @@
-
-
 .animate-box {
     opacity: 0;
 }
-
-
 
 .fadeInLeft {
     -webkit-animation-name: fadeInLeft;
@@ -110,4 +106,25 @@ b, strong {
     .full-width {
         width: 100%;
     }
+}
+
+a {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: transparent;
+    color: #888;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h5 {
+    font-family: 'Rambla', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
 }
