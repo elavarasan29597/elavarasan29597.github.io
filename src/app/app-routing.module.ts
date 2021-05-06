@@ -10,6 +10,7 @@ import { HobbitComponent } from './components/hobbies/hobbit/hobbit.component';
 import { HobbyComponent } from './components/hobbies/hobby/hobby.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
+import { TestComponent } from './components/test/test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
@@ -34,6 +35,7 @@ const routes: Routes = [
     , data: { animation: 'Blogs' }
   },
   { path: 'contact', component: ContactComponent, data: { animation: 'Contact' } },
+  { path: 'test', component: TestComponent, data: { animation: 'Test' } },
 
 ];
 

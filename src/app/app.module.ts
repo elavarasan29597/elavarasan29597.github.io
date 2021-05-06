@@ -3,6 +3,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { AppRoutingModule } from './app-routing.module';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { SocialLoginModule, SocialAuthServiceConfig, FacebookLoginProvider } from 'angularx-social-login';
+import { GoogleLoginProvider } from 'angularx-social-login';
+
+
 import { AppComponent } from './app.component';
 
 
@@ -24,6 +30,9 @@ import { HobbyComponent } from './components/hobbies/hobby/hobby.component';
 import { BlogPreviewComponent } from './components/blog/blog-preview/blog-preview.component';
 import { BlogsComponent } from './components/blog/blogs/blogs.component';
 import { SidebarModule } from 'primeng/sidebar';
+import { TestComponent } from './components/test/test.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +48,7 @@ import { SidebarModule } from 'primeng/sidebar';
     HobbyComponent,
     BlogPreviewComponent,
     BlogsComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +58,8 @@ import { SidebarModule } from 'primeng/sidebar';
     ButtonModule,
     SidebarModule,
     BrowserAnimationsModule, AvatarModule,
+    ReactiveFormsModule,
+    SocialLoginModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -56,7 +68,28 @@ import { SidebarModule } from 'primeng/sidebar';
       }
     })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '1080951798608-mmm2qmgjvqqnqm10kmpp4qi6mukjc0sc.apps.googleusercontent.com'
+            )
+          },
+          {
+            id: FacebookLoginProvider.PROVIDER_ID,
+            provider: new FacebookLoginProvider(
+              '372519954101406'
+            )
+          }
+        ]
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
