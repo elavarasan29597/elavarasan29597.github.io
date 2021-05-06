@@ -77,7 +77,8 @@ import { TestComponent } from './components/test/test.component';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '1080951798608-mmm2qmgjvqqnqm10kmpp4qi6mukjc0sc.apps.googleusercontent.com'
+              // '1080951798608-mmm2qmgjvqqnqm10kmpp4qi6mukjc0sc.apps.googleusercontent.com'
+              '61095316339-kcba3eek6to8tfan7tqov8k6jlcm26ie.apps.googleusercontent.com'
             )
           },
           {
