@@ -22,6 +22,7 @@ export class TestComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     this.loginForm = this.formBuilder.group({
       email: ['', Validators.required],
       password: ['', Validators.required]
