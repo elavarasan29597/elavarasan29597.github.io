@@ -2,6 +2,7 @@
 
 <div *ngIf="!isLoggedin">
   <button type="button" (click)="loginWithFacebook()" class="btn btn-primary btn-block">Signin with Facebook</button>
+  <button type="button" (click)="loginWithGoogle()" class="btn btn-primary btn-block">Signin with Google</button>
 </div>
 
 <div *ngIf="isLoggedin === true">

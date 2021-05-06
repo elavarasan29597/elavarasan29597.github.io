@@ -37,6 +37,13 @@ export class TestComponent implements OnInit {
     this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
 
+
+
+  loginWithGoogle(): void {
+    this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID);
+  }
+
+
   signOut(): void {
     this.socialAuthService.signOut();
   }
